@@ -1,6 +1,7 @@
 import './App.css';
 import NavigationTool from "../NavigationTool/NavigationTool";
 import { useState } from 'react';
+import InfoContainer from '../InfoContainer/InfoContainer';
 
 function App() {
   const [data, setData] = useState(null);
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <NavigationTool onApiCall={setData} />
-      <div>{JSON.stringify(data)}</div>
+      {data  &&<InfoContainer weatherInfo ={data}/>}
+      
     </div>
   );
 }
