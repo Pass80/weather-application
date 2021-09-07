@@ -7,9 +7,11 @@ function NavigationTool({ onApiCall }) {
     <form
       className="nav"
       onSubmit={(e) => {
+        
         e.preventDefault();
         api(e.target.elements.city.value).then((data) => {
           onApiCall(data);
+          console.log(data)
         });
       }}
     >

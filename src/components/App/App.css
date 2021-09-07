@@ -1,18 +1,18 @@
-body{
-	background-color: rgb(84, 206, 243);
-	margin: 0;
+html,body{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-image: url("/src/weather-icons/wallpaper.jpg") ; 
+    
 }
 * {
-box-sizing: border-box;	
+  box-sizing: border-box;
+}
 
-} 
-
-.infos  {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	
-	
-	
-	
+.infos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }

@@ -6,8 +6,13 @@ import InfoContainer from "../InfoContainer/InfoContainer";
 function App() {
   const [data, setData] = useState(null);
 
+ 
+
   return (
-    <div className="App">
+    <div
+      className="App"
+      
+    >
       <NavigationTool onApiCall={setData} />
       {data && (
         <div className="infos">
