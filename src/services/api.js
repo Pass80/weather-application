@@ -1,10 +1,9 @@
-import apiKey from "./apiKey";
 import convertToDate from "./dates";
 
 const api = (city) => {
   
   return fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=${city}&days=3`
   )
     .then((response) => response.json())
     .then((response) => {
